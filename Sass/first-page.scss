@@ -1,0 +1,32 @@
+.firstpage-wrap {
+    display: flex;
+    max-width: 1080px;
+    border-bottom: 2px solid #1F1F29 opacity 0.05;
+    margin-left: auto;
+    margin-right: auto;
+}
+%font {
+    font-family: Lab Grotesque;
+    font-style: normal;
+    color: #1F1F29;
+}
+
+.firstpage-block{
+    max-width: 525px;
+    display: flex;
+    flex-direction: column;
+    h1{
+        @extend %font;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+    }
+    p {
+        @extend %font;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+    };
+}

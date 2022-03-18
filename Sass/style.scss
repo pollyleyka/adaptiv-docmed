@@ -1,0 +1,23 @@
+@import "fonts.scss";
+%font {
+    font-family: Lab Grotesque;
+    font-style: normal;
+    color: #1F1F29;
+}
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+}
+.background-pic {
+    background-image: url('.//pic/Background.png');
+    }
+@import "first-page.scss";

@@ -1,0 +1,40 @@
+.firstpage-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1080px;
+  border-bottom: 2px solid #1F1F29 opacity 0.05;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.firstpage-block h1, .firstpage-block p {
+  font-family: Lab Grotesque;
+  font-style: normal;
+  color: #1F1F29;
+}
+
+.firstpage-block {
+  max-width: 525px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.firstpage-block h1 {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+}
+
+.firstpage-block p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+}
