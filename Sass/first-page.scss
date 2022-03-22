@@ -1,14 +1,19 @@
-.firstpage-wrap {
-    display: flex;
+.firstpage {
     max-width: 1080px;
-    border-bottom: 2px solid #1F1F29 opacity 0.05;
     margin-left: auto;
     margin-right: auto;
 }
-%font {
-    font-family: Lab Grotesque;
-    font-style: normal;
-    color: #1F1F29;
+.firstpage-wrap {
+    display: flex;
+    max-width: 1080px;
+    border-bottom: 2px solid #ccccce;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+    img{
+        margin-right: 29px;
+        width: 388px;
+        height: 413px;
+    }
 }
 
 .firstpage-block{
@@ -21,6 +26,8 @@
         font-size: 56px;
         line-height: 110%;
         letter-spacing: -0.02em;
+        padding: 0;
+        margin-bottom: 10px;
     }
     p {
         @extend %font;
@@ -28,5 +35,179 @@
         font-size: 18px;
         line-height: 150%;
         letter-spacing: 0.01em;
+        padding: 0;
+        margin-bottom: 40px;
     };
+}
+.buttons-block {
+    display: flex;
+}
+.firstpage-button {
+    @extend %font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: 0px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-right: 37px;
+    padding-left: 27px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    &:hover {
+        background: linear-gradient(96.22deg, #2C6DEB -10.49%, #6BC6F9 126.04%);
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}
+
+.button-doctor::before {
+    content: "";
+    background-image: url("pic/button-doc-icon.svg");
+     height: 18px;
+     width: 18px;
+     background-size: cover;
+     margin-right: 12px;
+     display: inline-block;
+     vertical-align: middle;
+    }
+
+.online-button::before {
+    content: "";
+    background-image: url("pic/button-online-icon.svg");
+    height: 12px;
+    width: 12px;
+    background-size: cover;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section-question{
+    @extend %questions;
+}
+.advantages-wrap {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.advantages-item {
+    display: block;
+    margin-right: 40px;
+    span{
+        @extend %font;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        margin-bottom: 20px;
+    }
+    p{
+        @extend %font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+    };
+}
+@media (max-width: 1119px) {
+    .firstpage-wrap {
+        img {
+            width: 231.54px*1.5;
+            height: 258.86px*1.5;
+        }
+    }
+    .advantages-item {
+        span{
+            font-size: 26px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 892px){
+    .firstpage {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .firstpage-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+            img {
+                align-self: center;
+                width: 231.54px*1.2;
+                height: 258.86px*1.2;
+            }
+    }
+    .section-question{
+        margin-left: 20px;
+    }
+    .advantages-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+
+ .firstpage-wrap {
+     padding-bottom: 20.25px;
+     margin-bottom: 30px;
+     img {
+         align-self: center;
+         width: 231.54px;
+         height: 258.86px;
+     }
+ }
+ .firstpage-block {
+     max-width: 335px;
+     h1 {
+         font-size: 40px;
+         line-height: 110%;
+         letter-spacing: -0.02em;
+         padding: 0;
+         margin-bottom: 10px;
+     }
+     p {
+         color: #8D8DA0;
+         font-size: 16px;
+         line-height: 150%;
+         letter-spacing: 0.01em;
+         margin-bottom: 17px;
+     }
+ }
+ .firstpage-button {
+     font-size: 14px;
+     padding-top: 13px;
+     padding-bottom: 13px;
+     padding-right: 16px;
+     padding-left: 18px;
+     margin-right: 3px;
+     margin-bottom: 5px;
+
+     &:hover {
+         background: linear-gradient(96.22deg, #2C6DEB -10.49%, #6BC6F9 126.04%);
+         color: #FFFFFF;
+         cursor: pointer;
+     }
+ }
+ .section-question {
+     font-size: 12px;
+ }
+.advantages-item {
+    span {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+}
 }

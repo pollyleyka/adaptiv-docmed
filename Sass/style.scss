@@ -4,6 +4,17 @@
     font-style: normal;
     color: #1F1F29;
 }
+%questions {
+    font-family: Lab Grotesque;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #CAC9D8;
+    padding: 0px;
+}
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
@@ -14,10 +25,24 @@
     white-space: nowrap;
     overflow: hidden;
 }
+
 a:-webkit-any-link {
     cursor: pointer;
 }
 .background-pic {
-    background-image: url('.//pic/Background.png');
+    background-image: url("pic/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     }
+@media screen and (max-width: 892px) {
+    .background-pic {
+        background-image: url("pic/Background_mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 @import "first-page.scss";
+
+
+
