@@ -48,6 +48,11 @@ a {
     text-decoration: none;
     color: #1F1F29;
 }
+@media screen and (max-width: 1178px) {
+    .background-pic {
+        margin-top: 70px;
+    }
+}
 @media screen and (max-width: 892px) {
     .background-pic {
         background-image: url("pic/Background_mobile.png");
@@ -59,6 +64,7 @@ a {
     }
 }
 @import "header.scss";
+
 @import "first-page.scss";
 
 

@@ -182,6 +182,12 @@ a {
   color: #1F1F29;
 }
 
+@media screen and (max-width: 1178px) {
+  .background-pic {
+    margin-top: 70px;
+  }
+}
+
 @media screen and (max-width: 892px) {
   .background-pic {
     background-image: url("pic/Background_mobile.png");
@@ -331,11 +337,23 @@ button:hover {
   .header-main-nav {
     display: none;
   }
+  header {
+    height: 70px;
+  }
+  .header-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+  }
 }
 
 @media screen and (max-width: 785px) {
   .num-ref {
     display: none;
+  }
+  .header-sign-btn {
+    width: 124px;
+    height: 45px;
   }
 }
 
@@ -349,20 +367,8 @@ button:hover {
     height: 15px;
     width: 75px;
   }
-  header {
-    height: 70px;
-  }
-  .header-wrap {
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 70px;
-  }
   .headr-serch-btn {
     display: none;
-  }
-  .header-sign-btn {
-    width: 124px;
-    height: 45px;
   }
 }
 
@@ -456,6 +462,16 @@ button:hover {
   vertical-align: middle;
 }
 
+.button-doctor:hover:before {
+  background-image: url("pic/button-doc-icon--hover.svg");
+  height: 18px;
+  width: 18px;
+  background-size: cover;
+  margin-right: 12px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .online-button::before {
   content: "";
   background-image: url("pic/button-online-icon.svg");
@@ -463,6 +479,16 @@ button:hover {
   width: 12px;
   background-size: cover;
   margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.online-button:hover:before {
+  background-image: url("pic/button-online-icon--hover.svg");
+  height: 12px;
+  width: 12px;
+  background-size: cover;
+  margin-right: 12px;
   display: inline-block;
   vertical-align: middle;
 }

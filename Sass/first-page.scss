@@ -71,7 +71,17 @@
      margin-right: 12px;
      display: inline-block;
      vertical-align: middle;
-    }
+}
+.button-doctor:hover:before {
+    background-image: url("pic/button-doc-icon--hover.svg");
+    height: 18px;
+    width: 18px;
+    background-size: cover;
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 
 .online-button::before {
     content: "";
@@ -80,6 +90,15 @@
     width: 12px;
     background-size: cover;
     margin-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.online-button:hover:before {
+    background-image: url("pic/button-online-icon--hover.svg");
+    height: 12px;
+    width: 12px;
+    background-size: cover;
+    margin-right: 12px;
     display: inline-block;
     vertical-align: middle;
 }

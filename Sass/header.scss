@@ -97,13 +97,25 @@ margin-right: 30px;
     }
 }
 @media screen and (max-width: 1178px){
-    .header-main-nav{
-        display: none;
-    }
+        .header-main-nav{
+            display: none;
+        }
+        header {
+            height: 70px;
+        }
+        .header-wrap {
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 70px;
+        }
 }
 @media screen and (max-width: 785px){
     .num-ref {
         display: none;
+    }
+    .header-sign-btn {
+        width: 124px;
+        height: 45px;
     }
 }
 @media screen and (max-width: 520px){
@@ -116,20 +128,8 @@ margin-right: 30px;
         height: 15px;
         width: 75px;
     }
-    header {
-        height: 70px;
-    }
-    .header-wrap {
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 70px;
-    }
     .headr-serch-btn {
         display: none;
     }
-    .header-sign-btn {
-        width: 124px;
-        height: 45px;
-        }
     }
 
