@@ -1,0 +1,135 @@
+header{
+    height: 90px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    display: block;
+    z-index: 6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+button {
+    border: 0px;
+    background: #FFFFFF;
+    &:hover {
+        cursor: pointer;
+    }
+}
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding-left: 42px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+    max-width: 1280px;
+}
+.header-burger-nav {
+    display: flex;
+    align-items: center;
+}
+.header-main-nav {
+    display: flex;
+    align-items: center;
+}
+.header-login-nav {
+    display: flex;
+    align-items: center;
+}
+.nav-item {
+    @extend %font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+}
+.main-nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header-burg-btn {
+    margin-right: 34px;
+    width: 30px;
+    height: 30px;
+}
+.header-logo {
+    height: 22px;
+    width: 110px;
+}
+.num-ref {
+margin-right: 30px;
+}
+.header-sign-btn{
+    display: block;
+    width: 159px;
+    height: 55px;
+    border: 2px solid #1F1F29;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 12px;
+    &:hover {
+        color: #FFFFFF;
+        background-color: #1F1F29;
+    }
+}
+.headr-serch-btn{
+    height: 20px;
+    width: 20px;
+    margin-left: 40px;
+}
+@media screen and (max-width: 1245px){
+    .main-nav-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .num-ref {
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width: 1178px){
+    .header-main-nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 785px){
+    .num-ref {
+        display: none;
+    }
+}
+@media screen and (max-width: 520px){
+    .header-burg-btn {
+        margin-right: 23px;
+        width: 21px;
+        height: 25px;
+    }
+    .header-logo {
+        height: 15px;
+        width: 75px;
+    }
+    header {
+        height: 70px;
+    }
+    .header-wrap {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 70px;
+    }
+    .headr-serch-btn {
+        display: none;
+    }
+    .header-sign-btn {
+        width: 124px;
+        height: 45px;
+        }
+    }
+

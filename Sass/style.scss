@@ -15,6 +15,10 @@
     color: #CAC9D8;
     padding: 0px;
 }
+body{
+    padding: 0;
+    margin: 0;
+}
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
     width: 1px;
@@ -25,6 +29,9 @@
     white-space: nowrap;
     overflow: hidden;
 }
+.hidden{
+    display: none;
+}
 
 a:-webkit-any-link {
     cursor: pointer;
@@ -33,15 +40,25 @@ a:-webkit-any-link {
     background-image: url("pic/Background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
+    margin: 0;
+    margin-top: 90px;
     }
+a {
+    text-decoration: none;
+    color: #1F1F29;
+}
 @media screen and (max-width: 892px) {
     .background-pic {
         background-image: url("pic/Background_mobile.png");
         background-repeat: no-repeat;
         background-size: cover;
+        padding: 0;
+        margin: 0;
+        margin-top: 70px;
     }
 }
-
+@import "header.scss";
 @import "first-page.scss";
 
 

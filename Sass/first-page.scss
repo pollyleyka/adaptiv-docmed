@@ -51,10 +51,8 @@
     background: #FFFFFF;
     border-radius: 15px;
     border: 0px;
-    padding-top: 15px;
-    padding-bottom: 16px;
-    padding-right: 37px;
-    padding-left: 27px;
+    height: 55px;
+    width: 208px;
     margin-right: 20px;
     margin-bottom: 5px;
     &:hover {
@@ -183,20 +181,17 @@
          margin-bottom: 17px;
      }
  }
+ .buttons-block {
+     width: 100%;
+     flex-wrap: nowrap;
+ }
  .firstpage-button {
      font-size: 14px;
-     padding-top: 13px;
-     padding-bottom: 13px;
-     padding-right: 16px;
-     padding-left: 18px;
-     margin-right: 3px;
+     margin-right: 2px;
      margin-bottom: 5px;
-
-     &:hover {
-         background: linear-gradient(96.22deg, #2C6DEB -10.49%, #6BC6F9 126.04%);
-         color: #FFFFFF;
-         cursor: pointer;
-     }
+     z-index: 0;
+     height: 44.75px;
+     width: 163px;
  }
  .section-question {
      font-size: 12px;
