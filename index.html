@@ -11,6 +11,7 @@
   <title>DocMed — клиника доказательной медицины </title>
   <link rel="normalize" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <button class="header-burg-btn">
           <img src="css/pic/burger-icon.svg" alt="">
         </button>
-        <a href="index.html">
+        <a href="index.html" target="_blank">
           <img src="css/pic/logo-icon-desctop.svg" alt="logo" class="header-logo">
           <img src="css/pic/header-close-btn.svg" alt="logo" class="header-logo hidden">
         </a>
@@ -45,8 +46,8 @@
         </ul>
       </nav>
       <ul class="header-login-nav">
-        <li >
-          <a href="" class="nav-item num-ref">+7 (495) 186-14-85</a>
+        <li>
+          <a href=tel:+7(999)999-19-19 class="nav-item num-ref">+7 (495) 186-14-85</a>
         </li>
         <li>
           <button class="header-sign-btn nav-item">Записаться</button>
@@ -62,6 +63,7 @@
 
   <main>
     <div class="background-pic">
+      <!-- Первая страница, преимущества -->
       <div class="firstpage">
         <div class="firstpage-wrap">
           <img class="firstpage-smile" src="css/pic/firstpage-smile.svg" alt="smile">
@@ -94,110 +96,105 @@
         </ul>
 
       </div>
-
-
-
-      <div class="firstpage">
-        <div class="firstpage-wrap">
-          <img class="firstpage-smile" src="css/pic/firstpage-smile.png" alt="smile">
-          <div class="firstpage-block">
-            <h1>Объясняем, диагностируем, лечим в Москве </h1>
-            <p>Работаем по принципам доказательной медицины</p>
-            <div class="buttons-block">
-              <button class="firstpage-button button-doctor">Выбрать врача</button>
-              <button class="firstpage-button online-button">Онлайн-прием</button>
-            </div>
+      <!-- Доктора -->
+       <div class="doctors-wrap swiper-container">
+        <p class="section-question">наши специалисты</p>
+        <div class="doctors-h2-btn-wrap">
+          <h2>Врачи DocMed</h2>
+          <div class="doctors-btns-wrap">
+            <button class="doctors-left-btn">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle r="16.5" transform="matrix(-1 0 0 1 17.5 17.5)" stroke="#1F1F29" stroke-width="2" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M17.2073 11.3786L10.929 17.6568L17.2073 23.9351L18.6215 22.5208L14.7574 18.6568L23.6569 18.6568L23.6569 16.6568H14.7574L18.6215 12.7928L17.2073 11.3786Z"
+                  fill="#1F1F29" />
+              </svg>
+            </button>
+            <button class="doctors-right-btn">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="17.5" cy="17.5" r="16.5" stroke="#1F1F29" stroke-width="2" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M17.7927 11.3786L24.071 17.6568L17.7927 23.9351L16.3785 22.5208L20.2426 18.6568L11.3431 18.6568L11.3431 16.6568H20.2426L16.3785 12.7928L17.7927 11.3786Z"
+                  fill="#1F1F29" />
+              </svg>
+            </button>
           </div>
         </div>
-        <p class="section-question">За что нас выбирают?</p>
-        <ul class="advantages-wrap">
-          <li class="advantages-item">
-            <span>Честность</span>
-            <p>Не назначаем лишние анализы, повторные приемы и ненужные манипуляции. У врачей DocMed нет планов продаж.
-              Прозрачная стоимость приема - без сюрпризов на кассе </p>
-          </li>
-          <li class="advantages-item">
-            <span>Надежность</span>
-            <p>Врачи DocMed работают по нормам современной медицины и назначают только те методы диагностики,
-              профилактики и лечения, которые доказали свою безопасность и эффективность</p>
-          </li>
-          <li class="advantages-item">
-            <span>Забота</span>
-            <p>Мы за партнерский подход. Врач общается с пациентом на равных, готов доступно рассказать о назначениях,
-              развеять тревогу и подробно ответить на все вопросы. Нам не все равно</p>
-          </li>
-        </ul>
-
-      </div>
-
-
-
-      <div class="firstpage">
-        <div class="firstpage-wrap">
-          <img class="firstpage-smile" src="css/pic/firstpage-smile.png" alt="smile">
-          <div class="firstpage-block">
-            <h1>Объясняем, диагностируем, лечим в Москве </h1>
-            <p>Работаем по принципам доказательной медицины</p>
-            <div class="buttons-block">
-              <button class="firstpage-button button-doctor">Выбрать врача</button>
-              <button class="firstpage-button online-button">Онлайн-прием</button>
+        <div class="doctor-sections-wrap">
+        <div class="doctor-section">
+          <div class="doctor-info-wrap">
+            <div class="doc-info">
+              <p class="doc-name">Ольга Луговская</p>
+              <p class="doc-price">от 3500 ₽</p>
+              <p class="doc-phrase">«Знаю, как развивается ребенок и что точно не стоит считать патологией, и у меня
+                есть много всяких наград
+              </p>
             </div>
+            <a href="" class="sign-btn">Записаться на прием</a>
           </div>
+          <img src="css/pic/doctor-pic-1.svg" alt="фотография доктора">
         </div>
-        <p class="section-question">За что нас выбирают?</p>
-        <ul class="advantages-wrap">
-          <li class="advantages-item">
-            <span>Честность</span>
-            <p>Не назначаем лишние анализы, повторные приемы и ненужные манипуляции. У врачей DocMed нет планов продаж.
-              Прозрачная стоимость приема - без сюрпризов на кассе </p>
-          </li>
-          <li class="advantages-item">
-            <span>Надежность</span>
-            <p>Врачи DocMed работают по нормам современной медицины и назначают только те методы диагностики,
-              профилактики и лечения, которые доказали свою безопасность и эффективность</p>
-          </li>
-          <li class="advantages-item">
-            <span>Забота</span>
-            <p>Мы за партнерский подход. Врач общается с пациентом на равных, готов доступно рассказать о назначениях,
-              развеять тревогу и подробно ответить на все вопросы. Нам не все равно</p>
-          </li>
-        </ul>
-
-      </div>
-
-
-      <div class="firstpage">
-        <div class="firstpage-wrap">
-          <img class="firstpage-smile" src="css/pic/firstpage-smile.png" alt="smile">
-          <div class="firstpage-block">
-            <h1>Объясняем, диагностируем, лечим в Москве </h1>
-            <p>Работаем по принципам доказательной медицины</p>
-            <div class="buttons-block">
-              <button class="firstpage-button button-doctor">Выбрать врача</button>
-              <button class="firstpage-button online-button">Онлайн-прием</button>
+        <div class="doctor-section">
+          <div class="doctor-info-wrap">
+            <div class="doc-info">
+              <p class="doc-name">Ольга Луговская</p>
+              <p class="doc-price">от 3500 ₽</p>
+              <p class="doc-phrase">«Знаю, как развивается ребенок и что точно не стоит считать патологией, и у меня
+                есть много всяких наград
+              </p>
             </div>
+            <a href="" class="sign-btn">Записаться на прием</a>
           </div>
-        </div>
-        <p class="section-question">За что нас выбирают?</p>
-        <ul class="advantages-wrap">
-          <li class="advantages-item">
-            <span>Честность</span>
-            <p>Не назначаем лишние анализы, повторные приемы и ненужные манипуляции. У врачей DocMed нет планов продаж.
-              Прозрачная стоимость приема - без сюрпризов на кассе </p>
-          </li>
-          <li class="advantages-item">
-            <span>Надежность</span>
-            <p>Врачи DocMed работают по нормам современной медицины и назначают только те методы диагностики,
-              профилактики и лечения, которые доказали свою безопасность и эффективность</p>
-          </li>
-          <li class="advantages-item">
-            <span>Забота</span>
-            <p>Мы за партнерский подход. Врач общается с пациентом на равных, готов доступно рассказать о назначениях,
-              развеять тревогу и подробно ответить на все вопросы. Нам не все равно</p>
-          </li>
-        </ul>
+          <img src="css/pic/doctor-pic-1.svg" alt="фотография доктора">
 
-      </div>
+        </div>
+        </div>
+
+      </div> 
+
 
     </div>
   </main>
+
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-upper-wrap">
+        <div class="footer-adres-wrap">
+          <p class="footer-adres">Трубная, дом 35</p>
+          <p class="footer-adres-time">С 8:00 до 21:00</p>
+        </div>
+        <div class="footer-contacts-wrap">
+          <p>Для связи с нами</p>
+          <a href=tel:+7(999)999-19-19>+7(999)999-19-19</a>
+          <a href=tel:+7(999)999-19-19 class="second-nmb">+7(999)999-19-19</a>
+          <ul class="footer-social-wrap">
+            <li>
+              <a class="footer-social-item inst-icon" target="_blank" href="https://www.instagram.com/docmed_clinic/">
+              </a>
+            </li>
+            <li>
+              <a class="footer-social-item wa-icon" target="_blank"
+                href="https://api.whatsapp.com/send/?phone=79855055776&text=Обязательно+отправьте+это+сообщение+и+дождитесь+ответа.+Ваш+номер%3A+479449&app_absent=0">
+              </a>
+            </li>
+            <li>
+              <a class="footer-social-item tg-icon" target="_blank" href=""></a>
+            </li>
+            <li>
+              <a class="footer-social-item fb-icon" target="_blank" href=""></a>
+            </li>
+            <li>
+              <a class="footer-social-item vk-icon" target="_blank" href=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-down">
+        <p class="uppercase">Copyright © 2020 DOCMED</p>
+        <p>Дизайн сайта: <a href="https://www.m-a-x.design/">студия MAX</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>

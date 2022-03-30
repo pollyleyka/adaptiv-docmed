@@ -1,0 +1,205 @@
+.footer-wrap{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 55px;
+    padding-bottom: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+}
+.footer-upper-wrap{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccccce;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+.footer-down{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+        box-sizing: border-box;
+        p{
+            @extend %font;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            letter-spacing: 0.02em;
+            color: #CAC9D8;
+            padding: 0px;
+            margin: 0px;
+            a{
+                color: inherit;
+                font-size: inherit;
+            }
+        }
+        .uppercase{
+        text-transform: uppercase;
+        }
+}
+    .footer-adres {
+        @extend %font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-adres-time{
+        @extend %font;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+        padding: 0;
+        margin: 0;
+    }
+
+.footer-contacts-wrap{
+    display: flex;
+    flex-direction: column;
+    p{
+        @extend %font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        @extend %font;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+    }
+}
+
+.footer-social-wrap{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.footer-social-item::before {
+        content: "";
+        height: 40px;
+        width: 40px;
+        background-size: cover;
+        margin-right: 15px;
+        display: inline-block;
+        vertical-align: middle;
+}
+.footer-social-item:hover:before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inst-icon::before {
+    background-image: url("pic/social-icons/inst-icon.svg");
+}
+.inst-icon:hover:before {
+    background-image: url("pic/social-icons/inst-icon--hover.svg");
+}
+.wa-icon::before {
+    background-image: url("pic/social-icons/wa-icon.svg");
+}
+.wa-icon:hover:before {
+    background-image: url("pic/social-icons/wa-icon--hover.svg");
+}
+.tg-icon::before {
+    background-image: url("pic/social-icons/tg-icon.svg");
+}
+.tg-icon:hover:before {
+    background-image: url("pic/social-icons/tg-icon--hover.svg");
+}
+.fb-icon::before {
+    background-image: url("pic/social-icons/fb-icon.svg");
+}
+.fb-icon:hover:before {
+    background-image: url("pic/social-icons/fb-icon--hover.svg");
+}
+.vk-icon::before {
+    background-image: url("pic/social-icons/vk-icon.svg");
+}
+.vk-icon:hover:before {
+    background-image: url("pic/social-icons/vk-icon--hover.svg");
+}
+
+@media screen and (max-width: 892px){
+    .footer-wrap {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 630px){
+.footer-wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.footer-upper-wrap {
+    padding-bottom: 20px;
+}
+.footer-down {
+    flex-direction: column;
+    align-items: baseline;
+    padding-top: 20px;
+    p {
+        font-size: 12px;
+    }
+    .uppercase{
+        padding-bottom: 7px;
+    }
+}
+.footer-adres {
+    font-size: 12px;
+   padding-bottom: 5px;
+}
+.footer-adres-time {
+    font-size: 18px;
+}
+.footer-contacts-wrap {
+    p {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    a {
+        font-size: 18px;
+    }
+}
+.vk-icon, .second-nmb {
+    display: none;
+}
+}
+@media screen and (max-width: 450px){
+    .fb-icon {
+        display: none;
+    }
+    .footer-wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 25px;
+        padding-bottom: 35px;
+    }
+    .footer-upper-wrap {
+        padding-bottom: 10px;
+    }
+}
